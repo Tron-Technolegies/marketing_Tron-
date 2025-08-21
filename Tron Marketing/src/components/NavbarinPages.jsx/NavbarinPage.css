@@ -1,0 +1,88 @@
+.navbarinpage {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.navbarinpage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Logo */
+.navbarinpage-logo img {
+  height: 40px;
+}
+
+/* Links Center */
+.navbarinpage-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbarinpage-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbarinpage-links a:hover {
+  color: #49b9ff;
+}
+
+/* Contact Link Right */
+.navbarinpage-contact a {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbarinpage-contact a:hover {
+  color: #49b9ff;
+}
+
+/* Mobile Menu Button */
+.navbarinpage-toggle {
+  display: none;
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbarinpage-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbarinpage-links.active {
+    transform: translateY(0);
+  }
+
+  .navbarinpage-contact {
+    display: none;
+  }
+
+  .navbarinpage-toggle {
+    display: block;
+  }
+}

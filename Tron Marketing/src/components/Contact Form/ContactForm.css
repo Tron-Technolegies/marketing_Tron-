@@ -1,0 +1,72 @@
+.contact-section {
+  padding: 20px;
+  background-color: #f2f2f299;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.title h3 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+
+.title p {
+  font-size: 16px;
+  padding: 5px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500px;
+}
+
+.contact-form {
+  gap: 10px;
+  margin: 0 auto;
+  align-items: center;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  background-color: white;
+}
+
+.name-container {
+  display: flex;
+  gap: 20%;
+}
+
+.submit-button {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+  }
+  .name-container {
+    flex-direction: column;
+  }
+}

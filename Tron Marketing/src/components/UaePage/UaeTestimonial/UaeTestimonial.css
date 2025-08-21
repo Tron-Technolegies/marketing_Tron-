@@ -1,0 +1,113 @@
+.uae-testimonial-section {
+  position: relative;
+  padding: 80px 100px;
+  background-color: #fafafa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+}
+
+.uae-testimonial-quote {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: 220px;
+}
+
+.uae-testimonial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.uae-testimonial-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.uae-testimonial-text {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.uae-testimonial-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.uae-testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.uae-testimonial-author h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.uae-testimonial-author span {
+  font-size: 14px;
+  color: #777;
+}
+
+.uae-testimonial-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.uae-testimonial-controls button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.uae-next-btn {
+  background-color: #000;
+  color: #000000;
+  border: none;
+}
+
+.uae-testimonial-count {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .uae-testimonial-section {
+    padding: 50px 20px;
+  }
+
+  .uae-testimonial-title {
+    font-size: 20px;
+  }
+
+  .uae-testimonial-text {
+    font-size: 16px;
+  }
+
+  .uae-testimonial-author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .uae-testimonial-author h4 {
+    font-size: 14px;
+  }
+  .uae-testimonial-quote {
+    width: 120px;
+  }
+}
