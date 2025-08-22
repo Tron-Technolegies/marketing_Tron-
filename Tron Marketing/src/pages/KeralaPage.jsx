@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import NavbarinPage from "../components/NavbarinPages.jsx/Navbarinpage";
+import NavbarinPage from "../components/NavbarinPages/NavbarinPage";
 import UaeHero from "../components/UaePage/UaeHero/UaeHero";
 import UaeAboutUs from "../components/UaePage/UaeAboutUs/Uae-AboutUs";
 import UaeWhyChooseUs from "../components/UaePage/UaeWhychooseUs/UaeWhyChooseUs";

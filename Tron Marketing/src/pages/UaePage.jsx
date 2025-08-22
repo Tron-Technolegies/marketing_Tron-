@@ -7,7 +7,7 @@ import UaeDigitalMarketingSection from "../components/UaePage/UaeDigitalMarketin
 import UaeDmFaq from "../components/UaePage/UaeDmFaq/UaeDmFaq";
 import UaeTestimonial from "../components/UaePage/UaeTestimonial/UaeTestimonial";
 import ContactForminPage from "../components/UaePage/Contact Form in Page/ContactForminPage";
-import NavbarinPage from "../components/NavbarinPages.jsx/Navbarinpage";
+import NavbarinPage from "../components/NavbarinPages/NavbarinPage";
 
 export default function UaePage() {
   useEffect(() => {
