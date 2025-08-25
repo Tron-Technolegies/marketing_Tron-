@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./WhychooseUs.css";
+import "./WhyChooseUs.css";
 
 // Data for the 'Why Choose Us' section
 const whyChooseUsData = [
