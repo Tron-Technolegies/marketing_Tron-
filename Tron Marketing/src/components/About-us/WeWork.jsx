@@ -20,7 +20,7 @@ import React from "react";
 
 export default function WeWork() {
   return (
-    <section className="py-12 bg-white flex justify-center items-center pt-96">
+    <section className=" bg-white flex justify-center items-center ">
       <div className="relative max-w-[942px] w-full rounded-lg overflow-hidden">
         {/* Image */}
         <img src="/public/wework-banner.png" alt="We Work Section" className="w-full h-auto" />

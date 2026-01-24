@@ -90,6 +90,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .uae-hero-section {
+    padding: 2rem 1rem;
+  }
   .hero-container {
     grid-template-columns: 1fr;
   }

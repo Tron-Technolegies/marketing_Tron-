@@ -15,14 +15,14 @@
   z-index: 0;
 }
 
-.title {
+.whychooseus-title {
   text-align: center;
   margin-bottom: 40px;
   z-index: 1;
   position: relative;
 }
 
-.title h3 {
+.whychooseus-title h3 {
   font-size: 35px;
   font-weight: 700;
   color: #131316;
@@ -30,7 +30,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-.title p {
+.whychooseus-title p {
   font-size: 16px;
   color: #666;
 }

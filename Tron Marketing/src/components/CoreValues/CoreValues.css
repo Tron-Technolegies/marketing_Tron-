@@ -87,17 +87,30 @@
   line-height: 1.4;
   text-transform: lowercase;
 }
-
 /* Responsive */
 @media (max-width: 992px) {
-  .letters-grid,
+  /* Keep TRON letters in one row */
+  .letters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Make the cards 2 per row */
   .boxes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .letters-grid,
+  /* Still keep TRON letters in one row, but smaller text */
+  .letters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .letter {
+    font-size: 28px;
+  }
+
+  /* Cards stack vertically on small screens */
   .boxes-grid {
     grid-template-columns: 1fr;
   }

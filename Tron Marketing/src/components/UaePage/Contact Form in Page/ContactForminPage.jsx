@@ -4,7 +4,7 @@ import "./ContactForminPage.css";
 export default function ContactForminPage() {
   return (
     <section className="contact-section">
-      <div className="title">
+      <div className="contact-page-title">
         <h3>Get in contact & Get your free proposal</h3>
         <p>Submit and receive a custom strategy to grow your business.</p>
       </div>

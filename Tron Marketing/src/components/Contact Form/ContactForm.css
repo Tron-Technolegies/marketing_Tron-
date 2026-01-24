@@ -4,19 +4,19 @@
   border-radius: 10px;
   margin: 20px auto;
 }
-.title {
+.contact-title {
   text-align: center;
   margin-bottom: 20px;
   color: black;
 }
 
-.title h3 {
-  font-size: 30px;
+.contact-title h3 {
+  font-size: 300px;
   font-weight: 800;
   font-family: "Manrope", sans-serif;
 }
 
-.title p {
+.contact-title p {
   font-size: 16px;
   padding: 5px;
   font-family: "Manrope", sans-serif;

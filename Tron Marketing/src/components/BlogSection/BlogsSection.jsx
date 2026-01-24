@@ -33,7 +33,7 @@ export default function BlogsSection() {
   ];
   return (
     <section className="blogs-section">
-      <div className="title">
+      <div className="blog-title">
         <h4>From Our Blog</h4>
       </div>
       <div className="blogs-container">

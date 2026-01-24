@@ -107,3 +107,32 @@
     width: 100px;
   }
 }
+
+@media (max-width: 768px) {
+  .uae-dm-faq-section {
+    padding: 40px 20px;
+  }
+  .uae-dm-faq-title {
+    font-size: 24px;
+  }
+  .uae-dm-faq-description {
+    font-size: 14px;
+  }
+  .uae-dm-faq-question h4 {
+    font-size: 14px;
+  }
+  .uae-dm-faq-icon {
+    font-size: 16px;
+  }
+  .uae-dm-faq-answer {
+    font-size: 12px;
+  }
+  .uae-dm-faq-contact-us-btn button {
+    font-size: 12px;
+    width: fit-content;
+  }
+  .uae-dm-faq-more-qstn-btn button {
+    font-size: 12px;
+    width: fit-content;
+  }
+}

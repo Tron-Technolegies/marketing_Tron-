@@ -19,23 +19,22 @@ export default function AboutUs() {
           </div>
 
           <div className="about-text">
-            <h2 className="about-title">How Tron Marketing Started?</h2>
+            <h2 className="about-title">Where Strategy Meets Creativity</h2>
 
             <div className="about-description">
               <p>
-                In 2020, two passionate marketers came together with a shared vision — to build a
-                digital marketing agency that truly puts clients first.
+                Tron Marketing is a full-service digital marketing agency helping brands transform
+                their online presence through strategy, creativity, and technology. With a
+                passionate team of marketers, designers, and strategists, we deliver measurable
+                results that fuel sustainable business growth.
               </p>
 
               <p>
-                Frustrated by the industry's overuse of buzzwords and under-delivery of results,
-                they saw a clear gap in the market: businesses were spending more but gaining less,
-                and many were stuck with generic strategies that didn't align with their goals. With
-                a strong foundation in strategy, branding, and performance marketing, the duo
-                decided to change the game.
+                Our Mission: To empower businesses of all sizes with innovative marketing strategies
+                that build strong digital identities and long-term customer relationships.
               </p>
 
-              <p>
+              {/* <p>
                 They didn't just want to offer digital services — they wanted to create meaningful
                 growth. Their mission was to build a team that listens closely, crafts tailored
                 solutions, and provides full transparency at every step. They envisioned an agency
@@ -48,7 +47,7 @@ export default function AboutUs() {
                 results. From the very beginning, they were committed to helping brands in Kerala
                 and the UAE grow smarter, scale faster, and stand out in an increasingly crowded
                 digital world.
-              </p>
+              </p> */}
             </div>
 
             <button className="know-more-btn">Know more</button>

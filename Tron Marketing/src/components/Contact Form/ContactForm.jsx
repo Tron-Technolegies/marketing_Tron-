@@ -4,7 +4,7 @@ import "./ContactForm.css";
 export default function ContactForm() {
   return (
     <section className="contact-section">
-      <div className="title">
+      <div className="contact-title">
         <h3>Get in contact & Get your free proposal</h3>
         <p>Submit and receive a custom strategy to grow your business.</p>
       </div>

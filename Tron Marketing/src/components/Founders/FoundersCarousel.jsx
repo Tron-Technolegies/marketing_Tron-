@@ -74,47 +74,47 @@ const FoundersCarousel = () => {
   return (
     <div className="founders-section">
       {/* Background Shapes */}
-      <div className="bg-shape shape1"></div>
-      <div className="bg-shape shape2"></div>
-      <div className="bg-shape shape3"></div>
-      <div className="bg-shape shape4"></div>
+      <div className="founders-bg-shape founders-shape1"></div>
+      <div className="founders-bg-shape founders-shape2"></div>
+      <div className="founders-bg-shape founders-shape3"></div>
+      <div className="founders-bg-shape founders-shape4"></div>
 
       {/* Header */}
-      <div className="header">
-        <p className="subtitle">INDUSTRY EXPERT LEADERSHIP</p>
-        <h1 className="title">MEET OUR FOUNDERS</h1>
+      <div className="founders-header">
+        <p className="founders-subtitle">INDUSTRY EXPERT LEADERSHIP</p>
+        <h1 className="founders-title">MEET OUR FOUNDERS</h1>
       </div>
 
       {/* Carousel */}
-      <div className="carousel-container">
-        <div className="carousel-content">
-          <div className="founder-image">
+      <div className="founders-carousel-container">
+        <div className="founders-carousel-content">
+          <div className="founders-image">
             <img src={founders[currentSlide].image} alt={founders[currentSlide].name} />
           </div>
-          <div className="founder-content">
-            <h2 className="founder-name">{founders[currentSlide].name}</h2>
-            <p className="founder-title">{founders[currentSlide].title}</p>
-            <p className="founder-description">{founders[currentSlide].description}</p>
-            <p className="founder-details">{founders[currentSlide].details}</p>
-            <p className="founder-more-details">{founders[currentSlide].moreDetails}</p>
+          <div className="founders-content">
+            <h2 className="founders-name">{founders[currentSlide].name}</h2>
+            <p className="founders-role">{founders[currentSlide].title}</p>
+            <p className="founders-description">{founders[currentSlide].description}</p>
+            <p className="founders-details">{founders[currentSlide].details}</p>
+            <p className="founders-more-details">{founders[currentSlide].moreDetails}</p>
           </div>
         </div>
 
         {/* Navigation Arrows */}
-        <button className="nav-arrow nav-arrow-prev" onClick={prevSlide}>
+        <button className="founders-nav-arrow founders-nav-prev" onClick={prevSlide}>
           <ArrowLeft />
         </button>
-        <button className="nav-arrow nav-arrow-next" onClick={nextSlide}>
+        <button className="founders-nav-arrow founders-nav-next" onClick={nextSlide}>
           <ArrowRight />
         </button>
       </div>
 
       {/* Dots Navigation */}
-      <div className="dots-container">
+      <div className="founders-dots">
         {founders.map((_, index) => (
           <div
             key={index}
-            className={`dot ${currentSlide === index ? "active" : ""}`}
+            className={`founders-dot ${currentSlide === index ? "active" : ""}`}
             onClick={() => goToSlide(index)}
           />
         ))}

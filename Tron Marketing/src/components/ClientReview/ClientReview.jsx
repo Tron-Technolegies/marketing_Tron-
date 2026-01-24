@@ -22,7 +22,7 @@ export default function ClientReview() {
       company: "ABC Company",
       rating: 5,
       comment:
-        "We are thrilled with the results from Tron Digital. Their strategic approach and creative content have significantly boosted our brand awareness and engagement. They don't just create noise; they create meaning.",
+        "Tron Marketing transformed our business visibility and helped us reach new audiences with measurable results.",
       image: "https://via.placeholder.com/150/000000/FFFFFF?text=OLIVIA+GREEN",
     },
     {
@@ -31,7 +31,7 @@ export default function ClientReview() {
       company: "XYZ Corp",
       rating: 5,
       comment:
-        "The team at Tron Digital is truly a pleasure to work with. Their deep understanding of social media trends and commitment to our goals has been invaluable. Our online presence has never been stronger.",
+        "Professional, creative, and results-driven — the best digital marketing partner in Kerala.",
       image: "https://via.placeholder.com/150/000000/FFFFFF?text=ALEX+JOHNSON",
     },
     {

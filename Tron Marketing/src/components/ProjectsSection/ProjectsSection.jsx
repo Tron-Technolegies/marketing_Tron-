@@ -47,7 +47,7 @@ export default function ProjectsSection() {
       </div>
 
       <div className="projects-header">
-        <div className="title">
+        <div className="project-title">
           <h3>Our Projects</h3>
           <p>
             Our social media agency helps you define your brand voice and give it that special tone

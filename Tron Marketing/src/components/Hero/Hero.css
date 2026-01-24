@@ -3,36 +3,126 @@
   width: 100%;
   background: url("/hero-bg.png") no-repeat center center / cover;
   padding: 4rem 1.5rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.green-dots {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 1.5rem;
+  z-index: 1;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.purple {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+}
+
+.blue {
+  background: linear-gradient(135deg, #4da3ff, #60a5fa);
+}
+
+.top-right {
+  top: 10%;
+  right: 5%;
+  width: 120px;
+  height: 120px;
+}
+
+.mid-right {
+  top: 45%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+}
+
+.bottom-left {
+  bottom: 25%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+}
+
+.bottom-right {
+  bottom: 5%;
+  right: 15%;
+  width: 140px;
+  height: 140px;
 }
 
 .hero-content {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-end;
+  z-index: 1;
+  flex: 1;
 }
 
 .main-title {
   font-family: "Benz Grotesk", sans-serif;
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1.1;
-  margin-left: 100px;
+  margin: 0;
+  flex: 1;
+  color: #000;
 }
 
 .brand-h1 {
   display: inline-flex;
   align-items: flex-end;
   gap: 0.15rem;
+  color: #000;
+}
+
+.relative.inline-block {
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  bottom: -5rem;
+  left: 0.5rem;
+  height: 3rem;
+  width: auto;
+  z-index: -1;
 }
 
 .inline-icon-large {
-  height: 4.5rem; /* match font size visually */
-  transform: translateY(0.2rem); /* adjust vertical position if needed */
+  height: clamp(3rem, 6vw, 5rem);
+  width: auto;
+  transform: translateY(0.3rem);
+  vertical-align: bottom;
 }
 
 .tron-h1 {
   display: block;
   margin-top: 0.5rem;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #000;
 }
 
 .tron-text {
@@ -40,55 +130,117 @@
   font-weight: 700;
 }
 
-.inline-icon {
-  height: 2rem;
-  margin: 0 0.2rem;
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-self: flex-end;
+  min-width: 300px;
 }
 
-.inline-icon-large {
-  height: 5rem;
-  margin: 0 0.2rem;
+.hero-description {
+  background: rgba(77, 163, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #333;
+  line-height: 1.5;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(77, 163, 255, 0.2);
 }
 
 .inline-icon-small {
   height: 1.25rem;
-  margin-right: 0.5rem;
+  width: auto;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
 }
 
-.hero-description {
-  max-width: 600px;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  color: #333;
-  margin-top: 1.5rem;
-  line-height: 1.5;
-  display: flex;
-  align-items: flex-start;
+.desc-text {
+  flex: 1;
 }
 
 .hero-btn {
-  margin-top: 2rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
   font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 2rem;
+  font-weight: 500;
+  padding: 1rem 1.75rem;
+  border-radius: 50px;
   border: none;
   cursor: pointer;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.hero-btn:hover {
+  opacity: 0.9;
 }
 
 .btn-icon {
   height: 1rem;
+  width: auto;
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
   .main-title {
-    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .right-section {
+    width: 100%;
+    align-self: stretch;
+    align-items: center;
   }
 
   .hero-description {
-    font-size: 0.9rem;
+    justify-content: center;
+    text-align: left;
+    max-width: none;
+  }
+
+  .inline-icon-small {
+    align-self: center;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .bubbles .bubble {
+    display: none; /* Hide bubbles on mobile for simplicity */
+  }
+
+  .green-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-description {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .hero-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
   }
 }

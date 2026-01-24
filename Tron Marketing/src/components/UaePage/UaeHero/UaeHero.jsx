@@ -7,10 +7,15 @@ export default function UaeHero() {
     <section className="uae-hero-section">
       <div className="hero-container">
         <div className="hero-content">
-          <h1>Stay ahead of the curve with our forward-thinking</h1>
+          <h1>
+            Where Your Brand Grows, Tron Leads the Way — The Digital Marketing Agency in Kerala
+          </h1>
           <p>
-            An award-winning SEO agency with disciplines in digital marketing, design, and website
-            development. Focused on understanding you.
+            At Tron, every brand has a story — and we turn that story into success. As a leading
+            digital marketing agency in Kerala, we combine creativity, data, and strategy to help
+            your business grow online and beyond. From web design and SEO to social media and
+            performance campaigns, our goal is simple — to make your brand unforgettable. Because
+            when your brand shines, we win together.
           </p>
 
           <button>
