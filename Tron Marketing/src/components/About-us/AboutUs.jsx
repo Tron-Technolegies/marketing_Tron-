@@ -1,9 +1,10 @@
 import React from "react";
 import "./About-us.css";
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 export default function AboutUs() {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about-us">
       <div className="container">
         <div className="about-header">
           <p className="section-label">About us</p>
@@ -23,15 +24,24 @@ export default function AboutUs() {
 
             <div className="about-description">
               <p>
-                Tron Marketing is a full-service digital marketing agency helping brands transform
-                their online presence through strategy, creativity, and technology. With a
-                passionate team of marketers, designers, and strategists, we deliver measurable
-                results that fuel sustainable business growth.
+                Tron Marketing is a performance-based Abu Dhabi-based digital
+                marketing agency that assists brands to create a robust and
+                stable online presence. We design digital solutions by
+                integrating strategy, creativity and data, that are aimed at not
+                just inspiring, but also doing.
               </p>
-
               <p>
-                Our Mission: To empower businesses of all sizes with innovative marketing strategies
-                that build strong digital identities and long-term customer relationships.
+                Since we are a reliable digital marketing company in Abu Dhabi,
+                we collaborate with companies in the UAE to enhance visibility,
+                connect with the appropriate audience, and generate measurable
+                growth with the help of SEO, performance marketing, paid
+                advertising, and social media.
+              </p>
+              <span className="font-semibold text-lg">Our Mission</span>
+              <p>
+                To empower Abu Dhabi and the UAE business with performance-based
+                digital marketing plans that enhance brands, reputation, and
+                facilitate long-run expansion.
               </p>
 
               {/* <p>
@@ -50,7 +60,16 @@ export default function AboutUs() {
               </p> */}
             </div>
 
-            <button className="know-more-btn">Know more</button>
+            <button
+              className="know-more-btn"
+              onClick={() =>
+                handleChatClickCustom(
+                  "I would like to know more about Tron Marketing",
+                )
+              }
+            >
+              Know more
+            </button>
           </div>
         </div>
       </div>

@@ -113,11 +113,12 @@ export default function FaqSection() {
   const currentFaqs = faqData[activeTab];
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <div className="faq-header">
         <h2 className="faq-title">Frequently Asked Questions</h2>
         <p className="faq-subtitle">
-          We’re here to help with any questions you have about plans, and supported features.
+          We’re here to help with any questions you have about plans, and
+          supported features.
         </p>
       </div>
       <div className="faq-content-wrapper">

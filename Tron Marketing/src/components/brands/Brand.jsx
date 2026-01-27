@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Brand() {
   return (
-    <section className="flex flex-wrap justify-center gap-10 py-5  bg-white">
+    <section
+      className="flex flex-wrap justify-center gap-10 py-5  bg-white"
+      id="brand"
+    >
       {[1, 2, 3, 4, 5, 6].map((num) => (
         <div key={num} className="brand-logo  w-32 flex justify-center">
           <img

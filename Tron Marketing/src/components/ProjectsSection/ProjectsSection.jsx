@@ -5,39 +5,54 @@ export default function ProjectsSection() {
   // Using placeholder images for the projects array
   const projects = [
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+1",
-      title: "Project 1",
-      content: "UI, Art Direction",
+      image: "/dahab.jpg",
+      title: "Dahab Miners",
+      content: "SEO, Social Media, Website",
     },
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+2",
-      title: "Project 2",
-      content: "UI, Art Direction",
+      image: "/handcar.jpg",
+      title: "HandCar",
+      content: "Ads, Social Media, Website",
     },
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+3",
-      title: "Project 3",
-      content: "UI, Art Direction",
+      image: "/intermine.jpg",
+      title: "Intermine Solutions",
+      content: "Ads, Social Media",
     },
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+4",
-      title: "Project 4",
-      content: "UI, Art Direction",
+      image: "/tikka.jpg",
+      title: "Tikka Tonight",
+      content: "Social Media, Ads, Website",
     },
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+5",
-      title: "Project 5",
-      content: "UI, Art Direction",
+      image: "/pizza.jpg",
+      title: "Pizza Club",
+      content: "Social Media, Website",
     },
     {
-      image: "https://placehold.co/400x400/cccccc/333333?text=Project+6",
-      title: "Project 6",
-      content: "UI, Art Direction",
+      image: "/precious.jpg",
+      title: "Precious Stores",
+      content: "Ads, Website, Videos",
+    },
+    {
+      image: "/leb.jpg",
+      title: "Lebaneese Mill",
+      content: "Ads, Website, Videos",
+    },
+    {
+      image: "/collective.jpg",
+      title: "Collective Transportations",
+      content: " Website",
+    },
+    {
+      image: "/earth.png",
+      title: "Earth Craft",
+      content: "Ads, Website, Videos",
     },
   ];
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       {/* Background icons with placeholder images */}
       <div className="bg-icon-1">
         <img src="/bg-icon-1.png" alt="Background Icon" />
@@ -50,10 +65,18 @@ export default function ProjectsSection() {
         <div className="project-title">
           <h3>Our Projects</h3>
           <p>
-            Our social media agency helps you define your brand voice and give it that special tone
-            so it stands out, but not by saying what you want to say louder. Our expertise helps you
-            speak to your audience with authority, elevating brand awareness. We don’t just make
-            noise; we make sense of your brand.
+            Results-oriented digital marketing agency Tron Marketing in Abu
+            Dhabi is illustrated by our projects, which are about strategic
+            thinking, creativity, and quantifiable performance. We guide the
+            brands to develop a strong digital voice and reach their audience in
+            a manner that is meaningful.
+          </p>
+          <p>
+            Our efforts are planned to create brand awareness, authority, and
+            long-term growth through the use of SEO and social media, as well as
+            performance marketing. We do not merely come up with campaigns, but
+            we provide digital marketing solutions, which are sensible in your
+            business.
           </p>
         </div>
       </div>
@@ -61,19 +84,22 @@ export default function ProjectsSection() {
       {/* Project cards in a responsive grid */}
       <div className="projects-container">
         {projects.map((item, index) => (
-          <div key={index} className="project-card">
-            <div className="project-image">
+          <div
+            key={index}
+            className="shadow-lg p-3 rounded-lg flex flex-col gap-3 items-center"
+          >
+            <div className="w-[300px] object-cover">
               <img src={item.image} alt={item.title} />
             </div>
-            <h4>{item.title}</h4>
+            <h4 className="text-xl font-semibold">{item.title}</h4>
             <p>{item.content}</p>
           </div>
         ))}
       </div>
 
-      <div className="more-details-btn-container">
+      {/* <div className="more-details-btn-container">
         <button className="more-details-btn">More Details</button>
-      </div>
+      </div> */}
     </section>
   );
 }

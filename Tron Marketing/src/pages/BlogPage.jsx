@@ -1,17 +1,23 @@
-import React from "react";
-import "./BlogSection.css";
+import React, { useEffect } from "react";
+import Navbar from "../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
-import { blogs } from "../../utils/blogs";
+import { blogs } from "../utils/blogs";
 
-export default function BlogsSection() {
+export default function BlogPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <section className="blogs-section" id="blogs">
-      <div className="blog-title">
-        <h4>From Our Blog</h4>
-      </div>
-      <div className="blogs-container">
-        {blogs.map((blog, index) => (
-          <Link to={`/blogs/${blog.id}`} key={index} className="blog-card">
+    <div className="min-h-screen">
+      <Navbar />
+      <h1 className="my-5 text-3xl font-semibold text-center">All Blogs</h1>
+      <div className="max-w-6xl w-full grid md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center justify-center mx-auto my-7">
+        {blogs.map((blog) => (
+          <Link
+            to={`/blogs/${blog.id}`}
+            key={blog.title}
+            className="shadow-xl p-2 w-full bg-white h-full"
+          >
             <div className="blog-image">
               <img src={blog.image} alt={blog.title} />
             </div>
@@ -32,12 +38,6 @@ export default function BlogsSection() {
           </Link>
         ))}
       </div>
-      <img src="/bg-icon-circle.png" alt="" className="bg-icon-circle" />
-      <div className="mt-5">
-        <Link to={"/blogs"} className="p-3 rounded-xl bg-black text-white ">
-          Show More
-        </Link>
-      </div>
-    </section>
+    </div>
   );
 }

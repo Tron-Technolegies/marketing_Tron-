@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import "../../assets/fonts/benzGrotesk.css";
+import { handleChatClickCustom } from "../../utils/whatsapp";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      closeMenu();
+    if (location.pathname === "/") {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }, 100);
     }
   };
 
@@ -24,7 +31,10 @@ export default function Navbar() {
       </div>
 
       {/* Hamburger */}
-      <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -32,19 +42,54 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className={`links ${menuOpen ? "open" : ""}`}>
-        <button onClick={() => scrollToSection("brand")}>Services</button>
-        <button onClick={() => scrollToSection("projects")}>Case Study</button>
-        <button onClick={() => scrollToSection("expertise")}>Who we serve</button>
-        <button onClick={() => scrollToSection("about-us")}>About us</button>
-        <button onClick={() => scrollToSection("blogs")}>Blog</button>
-        <button className="contact-btn mobile-contact" onClick={() => scrollToSection("contact")}>
+        <button
+          onClick={() => scrollToSection("brand")}
+          className="cursor-pointer"
+        >
+          Services
+        </button>
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="cursor-pointer"
+        >
+          Case Study
+        </button>
+        <button
+          onClick={() => scrollToSection("expertise")}
+          className="cursor-pointer"
+        >
+          Who we serve
+        </button>
+        <button
+          onClick={() => scrollToSection("about-us")}
+          className="cursor-pointer"
+        >
+          About us
+        </button>
+        <button
+          onClick={() => scrollToSection("blogs")}
+          className="cursor-pointer"
+        >
+          Blog
+        </button>
+        <button
+          className="contact-btn mobile-contact"
+          onClick={() =>
+            handleChatClickCustom("I Like to Know more about Tron Marketing")
+          }
+        >
           Contact
         </button>
       </div>
 
       {/* Desktop Contact Button */}
       <div className="nav-btn">
-        <button className="contact-btn" onClick={() => scrollToSection("contact")}>
+        <button
+          className="contact-btn"
+          onClick={() =>
+            handleChatClickCustom("I Like to Know more about Tron Marketing")
+          }
+        >
           Contact
         </button>
       </div>

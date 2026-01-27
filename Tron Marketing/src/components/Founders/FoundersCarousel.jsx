@@ -8,35 +8,22 @@ const FoundersCarousel = () => {
     {
       name: "RISHAAN",
       title: "CO-FOUNDER, CEO",
-      description:
-        "Entrepreneur, UCSD Instructor, Industry Speaker, Bestselling Author, Influencer and World Renown Digital Strategist",
+      description: "Entrepreneur, Digital Strategist",
       details:
-        'As CEO of Ignite Visibility, John is one of the world\'s most sought-after digital marketing strategists, a frequent industry speaker and former Search Engine Land "Search Marketer of the Year."',
+        "Rishan is an entrepreneur and digital marketing strategist with a strong vision for building scalable, technology-driven businesses. As the CEO of the company, he leads with a focus on innovation, performance, and long-term growth. With deep expertise in digital marketing and business development, Rishan has helped shape the company into a results-oriented technology partner for modern businesses.",
       moreDetails:
-        "With 20+ years of demanding industry experience, John has worked with 1,000+ online businesses, including amazing clients such as Tony Robbins, Morgan Stanley, Fox, Game Spot, New Egg, Tacori, Jacuzzi, Office Depot, USA Today, Sharp Healthcare and WeddingWire.",
-      image: "/public/founder.jpg",
+        "Under his leadership, the company continues to deliver high-impact digital solutions that combine strategy, design, and engineering.",
+      image: "/rishan.jpg",
     },
     {
-      name: "SARAH",
-      title: "CO-FOUNDER, CTO",
-      description:
-        "Tech Visionary, Former Google Engineer, AI Specialist, Innovation Leader and Strategic Technology Consultant",
+      name: "RIZWAN KAMARUDHEEN",
+      title: "CO-FOUNDER, MD",
+      description: "Tech Visionary, Innovation Leader ",
       details:
-        "As CTO of our company, Sarah leads our technical vision and has been instrumental in developing cutting-edge solutions that have transformed how businesses approach digital transformation.",
+        "Born and raised in the UAE, Rizwan has been active in the Bitcoin and crypto mining industry since 2020. With hands-on experience in mining operations, power strategy, and infrastructure, he has built streamlined solutions tailored to the UAE and emerging markets. Alongside his technical background, Rizwan serves as the Managing Director of Tron Marketing, where he leads strategic growth initiatives, digital transformation projects, and performance-driven marketing solutions for businesses across the region.",
       moreDetails:
-        "With 15+ years in tech leadership, Sarah has worked with Fortune 500 companies and startups alike, specializing in AI, machine learning, and scalable architecture solutions.",
-      image: "https://via.placeholder.com/320x500/444/fff?text=SARAH",
-    },
-    {
-      name: "MICHAEL",
-      title: "CO-FOUNDER, CMO",
-      description:
-        "Marketing Strategist, Brand Builder, Growth Hacker, Creative Director and Digital Marketing Expert",
-      details:
-        "Michael brings creative vision and strategic marketing expertise, having built brands from the ground up and scaled marketing operations for companies across various industries.",
-      moreDetails:
-        "His innovative approach to brand storytelling and customer acquisition has helped numerous companies achieve exponential growth and market leadership positions.",
-      image: "https://via.placeholder.com/320x500/555/fff?text=MICHAEL",
+        "Prior to Tron Marketing, he held leadership roles at firms including GreenGate and Tron Digital, contributing to energy-focused projects that shaped his expertise in operational efficiency and sustainable growth.",
+      image: "/rizwan.jpg",
     },
   ];
 
@@ -60,19 +47,33 @@ const FoundersCarousel = () => {
   };
 
   const ArrowLeft = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#666"
+      strokeWidth="2"
+    >
       <polyline points="15,18 9,12 15,6"></polyline>
     </svg>
   );
 
   const ArrowRight = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" strokeWidth="2">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#666"
+      strokeWidth="2"
+    >
       <polyline points="9,6 15,12 9,18"></polyline>
     </svg>
   );
 
   return (
-    <div className="founders-section">
+    <div className="founders-section" id="founders">
       {/* Background Shapes */}
       <div className="founders-bg-shape founders-shape1"></div>
       <div className="founders-bg-shape founders-shape2"></div>
@@ -89,22 +90,36 @@ const FoundersCarousel = () => {
       <div className="founders-carousel-container">
         <div className="founders-carousel-content">
           <div className="founders-image">
-            <img src={founders[currentSlide].image} alt={founders[currentSlide].name} />
+            <img
+              className="object-cover object-top h-full"
+              src={founders[currentSlide].image}
+              alt={founders[currentSlide].name}
+            />
           </div>
           <div className="founders-content">
             <h2 className="founders-name">{founders[currentSlide].name}</h2>
             <p className="founders-role">{founders[currentSlide].title}</p>
-            <p className="founders-description">{founders[currentSlide].description}</p>
+            <p className="founders-description">
+              {founders[currentSlide].description}
+            </p>
             <p className="founders-details">{founders[currentSlide].details}</p>
-            <p className="founders-more-details">{founders[currentSlide].moreDetails}</p>
+            <p className="founders-more-details">
+              {founders[currentSlide].moreDetails}
+            </p>
           </div>
         </div>
 
         {/* Navigation Arrows */}
-        <button className="founders-nav-arrow founders-nav-prev" onClick={prevSlide}>
+        <button
+          className="founders-nav-arrow founders-nav-prev"
+          onClick={prevSlide}
+        >
           <ArrowLeft />
         </button>
-        <button className="founders-nav-arrow founders-nav-next" onClick={nextSlide}>
+        <button
+          className="founders-nav-arrow founders-nav-next"
+          onClick={nextSlide}
+        >
           <ArrowRight />
         </button>
       </div>
