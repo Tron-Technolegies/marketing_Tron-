@@ -1,5 +1,10 @@
 import React from "react";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 import { CiMail, CiLocationOn } from "react-icons/ci"; // Using CiMail and CiLocationOn for consistency
 import { TbPhoneCall } from "react-icons/tb";
 import "./FooterSection.css";
@@ -21,7 +26,7 @@ export default function FooterSection() {
           </p>
           <p className="contact-item">
             <TbPhoneCall className="contact-icon" />
-            <a href="tel:+9710557069222">+971 055 706 9222</a>
+            <a href="tel:+919744866003">+91 9744866003</a>
           </p>
           <p className="contact-item phone-break">
             {" "}
@@ -50,16 +55,16 @@ export default function FooterSection() {
               <a href="/about-us">About us</a>
               <a href="/blog">Blog</a>
             </div>
-            <div className="footer-links-column">
+            {/* <div className="footer-links-column">
               <a href="/terms">Terms of Service</a>
               <a href="/privacy">Privacy Policy</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <div className="subscribe">
+        {/* <div className="subscribe">
           <p className="subscribe-title">
             Subscribe to get tips and tactics
             <br />
@@ -69,15 +74,18 @@ export default function FooterSection() {
             <input type="email" placeholder="Your email address" />
             <button type="submit">→</button>
           </form>
-        </div>
+        </div> */}
         <div className="social-icons">
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/trondigital_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >
             <FaInstagram />
           </a>
           <a href="#">
             <FaFacebookF />
           </a>
-          <a href="#">
+          <a target="_blank" href="https://www.linkedin.com/company/tronsocial">
             <FaLinkedinIn />
           </a>
           <a href="#">

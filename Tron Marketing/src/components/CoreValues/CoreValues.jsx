@@ -8,27 +8,27 @@ export default function CoreValues() {
     {
       icon: "/transparency.png",
       title: "TRANSPARENCY",
-      desc: "we believe in clear, honest communication—no hidden agendas, no vague promises. from strategy to reporting, we keep you informed every step of the way.",
+      desc: "Communication at all levels of the process is honest and transparent to us. Being an honest digital marketing agency in Abu Dhabi, we make you aware of the simple tactics, transparent reporting and no secret deals, to know how your campaigns are doing at any given moment.",
     },
     {
       icon: "results.png",
       title: "RESULTS",
-      desc: "our focus is always on delivering measurable outcomes. every campaign is crafted to achieve specific goals, whether it’s traffic, leads, or conversions.",
+      desc: "Everything we do is based on the results. The results that we concentrate on are quantifiable; it could be the increase in organic traffic due to the use of the best SEO, the creation of qualitative leads, or the enhancement of conversions. All the campaigns are created with performance and business prosperity in mind",
     },
     {
       icon: "/ownership.png",
       title: "OWNERSHIP",
-      desc: "we take full responsibility for the success of your project. your goals become our goals, and we’re fully invested in helping you achieve them.",
+      desc: "We assume full responsibility on any project that we are dealing with. Bringing your targets on board is our business and we are well inclined to attain them through careful planning, continuous optimization and results-based digital marketing initiatives.",
     },
     {
       icon: "/nextlevel.png",
       title: "NEXT-LEVEL THINKING",
-      desc: "we don’t believe in settling for what’s standard—we constantly push boundaries to find smarter, more innovative ways to grow your brand.",
+      desc: "We don’t settle for average. Our group keeps on trying to be smarter and more creative in assisting the brands to expand in competitive markets. Our digital marketing solutions involving the integration of creativity, data and experience are above the normal practices",
     },
   ];
 
   return (
-    <section className="core-values">
+    <section className="core-values" id="core-values">
       <h2 className="main-heading">OUR CORE VALUES</h2>
       <p className="subtitle">
         at the core of everything we do… <br />

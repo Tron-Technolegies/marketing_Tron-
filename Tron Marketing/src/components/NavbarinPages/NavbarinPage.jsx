@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarinPage.css";
+import { Link } from "react-router-dom";
 
 export default function NavbarinPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function NavbarinPage() {
     <nav className="navbarinpage">
       <div className="navbarinpage-container">
         {/* Logo */}
-        <div className="navbarinpage-logo" onClick={() => handleNavClick("hero")}>
+        <Link to={"/"} className="navbarinpage-logo">
           <img src="/logo.png" alt="Tron Marketing" />
-        </div>
+        </Link>
 
         {/* Nav Links */}
         <ul className={`navbarinpage-links ${menuOpen ? "active" : ""}`}>
@@ -29,12 +30,18 @@ export default function NavbarinPage() {
         </ul>
 
         {/* Contact Button */}
-        <div className="navbarinpage-contact" onClick={() => handleNavClick("contact")}>
+        <div
+          className="navbarinpage-contact"
+          onClick={() => handleNavClick("contact")}
+        >
           Contact us
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="navbarinpage-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <div
+          className="navbarinpage-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           ☰
         </div>
       </div>

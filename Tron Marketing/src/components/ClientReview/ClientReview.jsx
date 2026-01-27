@@ -8,7 +8,7 @@ const StarRating = ({ rating }) => {
     stars.push(
       <span key={i} className={`star ${i < rating ? "filled" : ""}`}>
         &#9733;
-      </span>
+      </span>,
     );
   }
   return <div className="star-rating">{stars}</div>;
@@ -17,35 +17,35 @@ const StarRating = ({ rating }) => {
 export default function ClientReview() {
   const reviews = [
     {
-      name: "Olivia Green",
+      name: "Leo",
       position: "CEO",
-      company: "ABC Company",
+      company: "Handcar ",
       rating: 5,
       comment:
-        "Tron Marketing transformed our business visibility and helped us reach new audiences with measurable results.",
+        "The experience of working with Tron Digital has been very great. Their team also knew our business objectives and presented an approach that proved to be effective. Since they are a digital marketing agency in Abu Dhabi, they are result-driven and not promise-orientated. We have observed visible visibility and quality of leads. ",
       image: "https://via.placeholder.com/150/000000/FFFFFF?text=OLIVIA+GREEN",
     },
     {
-      name: "Alex Johnson",
-      position: "Marketing Director",
-      company: "XYZ Corp",
+      name: "Hilal Mohammad",
+      position: "Marketing Manager",
+      company: "Dahab Miners",
       rating: 5,
       comment:
-        "Professional, creative, and results-driven — the best digital marketing partner in Kerala.",
+        "Tron Digital assisted us with our online presence by increasing our online presence by means of SEO and paid campaigns. They were transparent, professional and performance-orientated. Their team is reliable in terms of collaboration with a digital marketing agency in Abu Dhabi.",
       image: "https://via.placeholder.com/150/000000/FFFFFF?text=ALEX+JOHNSON",
     },
     {
-      name: "Sarah Kim",
-      position: "Founder",
+      name: "Mohammad Fayis",
+      position: "CEO",
       company: "Innovate Ltd.",
       rating: 5,
       comment:
-        "I highly recommend Tron Digital for anyone looking to elevate their brand. Their creative ideas and data-driven strategies are a winning combination. They are a true partner in our success.",
+        "The most important feature of Tron Digital that we liked and admired was the detailed care and clear communication. Everything was planned, even up to execution. Their digital marketing services assisted us in the identification of the right audience and the tangible growth they provided.",
       image: "https://via.placeholder.com/150/000000/FFFFFF?text=SARAH+KIM",
     },
   ];
   return (
-    <section className="client-review-section">
+    <section className="client-review-section" id="client-review">
       <div className="client-review-title">
         <h3>
           What our clients <br /> have to say
@@ -59,9 +59,6 @@ export default function ClientReview() {
             </div>
             <p className="client-review-card-comment">{review.comment}</p>
             <div className="client-review-card-bottom">
-              <div className="client-review-card-image">
-                <img src={review.image} alt="Client" />
-              </div>
               <div className="client-review-details">
                 <p className="client-review-card-name">{review.name}</p>
                 <p className="client-review-card-company">

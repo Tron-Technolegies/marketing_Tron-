@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import "./WhyChooseUs.css";
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 const whyChooseUsData = [
   {
     id: 1,
     title: "Data-Driven Marketing",
-    description: `Every campaign is backed by analytics and performance insights. We make decisions based on data, not assumptions, ensuring every move we make drives measurable growth.`,
+    description: `All of our decisions are informed by data and actual performance details. SEO is one of the strategies that we consider to achieve a steady and sustainable business development, and paid campaigns are just one of the tools`,
   },
   {
     id: 2,
     title: "End-to-End Solutions",
-    description: `From SEO to paid ads and automation, we handle everything under one roof. Our holistic approach ensures all your marketing efforts work seamlessly together.`,
+    description: `Our digital advertising offerings in Abu Dhabi are absolutely comprehensive, protecting method, execution, optimization, and reporting. This makes every one of your digital endeavors streamline in the direction of achievable business objectives.`,
   },
   {
     id: 3,
     title: "Creative Excellence",
-    description: `We blend strategy with design to deliver content that converts. Every piece of creative work we produce is made to engage, inspire, and perform.`,
+    description: `We are a creative, strategic team that would design campaigns that can connect with your audience and develop your brand with online platforms.`,
   },
   {
     id: 4,
     title: "Proven Track Record",
-    description: `With 250+ successful projects across multiple industries, our results speak for themselves. We’ve built a reputation on delivering success consistently.`,
+    description: `We are a reliable Abu Dhabi-based digital marketing firm that has assisted companies in the UAE to expand, attain quality leads, and attain quantifiable outcomes.  `,
   },
 ];
 
@@ -29,14 +30,24 @@ export default function WhychooseUs() {
   const [activeItem, setActiveItem] = useState(whyChooseUsData[0]);
 
   return (
-    <section className="whychooseus-section">
+    <section className="whychooseus-section" id="why-choose-us">
       {/* Background geometric icon */}
-      <img src="/whychooseus-icon.png" alt="Background Icon" className="section-icon" />
+      <img
+        src="/whychooseus-icon.png"
+        alt="Background Icon"
+        className="section-icon"
+      />
 
       {/* Title section */}
       <div className="whychooseus-title">
         <h3>Why Choose Us</h3>
-        <p>More Than Just A Social Marketing Agency</p>
+        <p className="text-lg">MORE THAN JUST A SOCIAL MEDIA AGENCY</p>
+        <p className="text-sm max-w-2xl mx-auto mt-2">
+          As a results-oriented digital marketing agency in Abu Dhabi, we assist
+          the brands in their development with the help of strategy, creativity
+          and performance-oriented implementation. This is the advantage of Tron
+          Marketing.
+        </p>
       </div>
 
       {/* Main content container */}
@@ -72,7 +83,16 @@ export default function WhychooseUs() {
 
       {/* Centered button at the bottom */}
       <div className="connect-btn-container">
-        <button className="connect-btn">Connect Us</button>
+        <button
+          className="connect-btn"
+          onClick={() =>
+            handleChatClickCustom(
+              "I would like to connect and work with Tron Marketing",
+            )
+          }
+        >
+          Connect Us
+        </button>
       </div>
     </section>
   );
