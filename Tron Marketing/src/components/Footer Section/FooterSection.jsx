@@ -8,9 +8,22 @@ import {
 import { CiMail, CiLocationOn } from "react-icons/ci"; // Using CiMail and CiLocationOn for consistency
 import { TbPhoneCall } from "react-icons/tb";
 import "./FooterSection.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function FooterSection() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (id) => {
+    if (location.pathname === "/") {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  };
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -48,12 +61,37 @@ export default function FooterSection() {
 
         <div className="footer-right">
           <div className="footer-links">
-            <div className="footer-links-column">
-              <a href="/services">Services</a>
-              <a href="/who-we-serve">Who we serve</a>
-              <a href="/case-studies">Case studies</a>
-              <a href="/about-us">About us</a>
-              <a href="/blog">Blog</a>
+            <div className="flex flex-col gap-2 md:items-end items-start">
+              <button
+                onClick={() => scrollToSection("expertise")}
+                className="cursor-pointer"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="cursor-pointer"
+              >
+                Case Study
+              </button>
+              <button
+                onClick={() => scrollToSection("why-choose-us")}
+                className="cursor-pointer"
+              >
+                Why Choose Us
+              </button>
+              <button
+                onClick={() => scrollToSection("about-us")}
+                className="cursor-pointer"
+              >
+                About us
+              </button>
+              <button
+                onClick={() => scrollToSection("blogs")}
+                className="cursor-pointer"
+              >
+                Blog
+              </button>
             </div>
             {/* <div className="footer-links-column">
               <a href="/terms">Terms of Service</a>

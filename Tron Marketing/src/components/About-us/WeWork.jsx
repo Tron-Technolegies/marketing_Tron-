@@ -28,7 +28,7 @@ export default function WeWork() {
       <div className="relative max-w-[942px] w-full rounded-lg overflow-hidden">
         {/* Image */}
         <img
-          src="/public/wework-banner.png"
+          src="/Wework-banner.jpg"
           alt="We Work Section"
           className="w-full h-auto"
         />

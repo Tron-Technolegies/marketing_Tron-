@@ -9,6 +9,7 @@ import UaeDmFaq from "../components/UaePage/UaeDmFaq/UaeDmFaq";
 import UaeTestimonial from "../components/UaePage/UaeTestimonial/UaeTestimonial";
 import ContactForminPage from "../components/UaePage/Contact Form in Page/ContactForminPage";
 import NavbarinPage from "../components/NavbarinPages/NavbarinPage";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function UaePage() {
   useEffect(() => {
@@ -19,7 +20,9 @@ export default function UaePage() {
     <>
       {/* ✅ SEO Meta Setup */}
       <Helmet>
-        <title>Best Digital Marketing Agency in Abu Dhabi | Tron Digital UAE</title>
+        <title>
+          Best Digital Marketing Agency in Abu Dhabi | Tron Digital UAE
+        </title>
         <meta
           name="description"
           content="Tron Digital offers ROI focused digital marketing services in Abu Dhabi including SEO, PPC, branding, and social media marketing for growing businesses in the UAE."
@@ -43,7 +46,7 @@ export default function UaePage() {
 
       {/* ✅ Page Sections */}
       <div>
-        <NavbarinPage />
+        <Navbar />
         <section id="hero">
           <UaeHero />
         </section>
