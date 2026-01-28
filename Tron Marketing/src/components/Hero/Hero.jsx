@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       id="hero"
       className="relative w-full min-h-screen py-12 sm:py-16 md:py-8 px-4 sm:px-6 md:px-12 lg:px-16 overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url(/hero-bg.png)" }}
+      style={{ backgroundImage: "url(/hero-bg.jpg)" }}
     >
       {/* Green dots icon - hidden on mobile */}
       <img

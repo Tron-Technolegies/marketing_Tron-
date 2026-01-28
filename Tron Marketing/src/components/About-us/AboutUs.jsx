@@ -13,7 +13,7 @@ export default function AboutUs() {
         <div className="about-content">
           <div className="about-image">
             <img
-              src="/about-img.png"
+              src="/about-img.jpg"
               alt="Modern Building Architecture"
               className="building-image"
             />

@@ -9,6 +9,7 @@ import UaeDigitalMarketingSection from "../components/UaePage/UaeDigitalMarketin
 import UaeDmFaq from "../components/UaePage/UaeDmFaq/UaeDmFaq";
 import UaeTestimonial from "../components/UaePage/UaeTestimonial/UaeTestimonial";
 import ContactForminPage from "../components/UaePage/Contact Form in Page/ContactForminPage";
+import Navbar from "../components/Navbar/Navbar";
 
 const KeralaPage = () => {
   useEffect(() => {
@@ -18,7 +19,9 @@ const KeralaPage = () => {
   return (
     <>
       <Helmet>
-        <title>Digital Marketing Agency in Thrissur | Tron Digital Kerala</title>
+        <title>
+          Digital Marketing Agency in Thrissur | Tron Digital Kerala
+        </title>
         <meta
           name="description"
           content="Boost your brand’s online visibility with Tron Digital Thrissur’s trusted digital marketing agency offering SEO, social media, web design, and performance marketing services."
@@ -41,7 +44,7 @@ const KeralaPage = () => {
       </Helmet>
 
       <div>
-        <NavbarinPage />
+        <Navbar />
         <UaeHero />
         <UaeAboutUs />
         <UaeWhyChooseUs />

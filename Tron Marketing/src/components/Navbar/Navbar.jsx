@@ -43,7 +43,7 @@ export default function Navbar() {
       {/* Navigation Links */}
       <div className={`links ${menuOpen ? "open" : ""}`}>
         <button
-          onClick={() => scrollToSection("brand")}
+          onClick={() => scrollToSection("expertise")}
           className="cursor-pointer"
         >
           Services
@@ -55,10 +55,10 @@ export default function Navbar() {
           Case Study
         </button>
         <button
-          onClick={() => scrollToSection("expertise")}
+          onClick={() => scrollToSection("why-choose-us")}
           className="cursor-pointer"
         >
-          Who we serve
+          Why Choose Us
         </button>
         <button
           onClick={() => scrollToSection("about-us")}
